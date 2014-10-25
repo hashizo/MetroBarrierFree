@@ -2,7 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>_XCCurrentVersionName</key>
-	<string>MetroBarrierFree.xcdatamodel</string>
+	<key>fontSizeSmall</key>
+	<integer>15</integer>
+	<key>fontSizeMedium</key>
+	<integer>20</integer>
+	<key>fontSizeLarge</key>
+	<integer>25</integer>
 </dict>
 </plist>

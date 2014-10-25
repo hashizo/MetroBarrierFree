@@ -7,14 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D680C6D919FC1D0D00931E20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C6D819FC1D0D00931E20 /* main.m */; };
-		D680C6DC19FC1D0D00931E20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C6DB19FC1D0D00931E20 /* AppDelegate.m */; };
-		D680C6DF19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D680C6DD19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodeld */; };
-		D680C6E219FC1D0E00931E20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C6E119FC1D0E00931E20 /* ViewController.m */; };
-		D680C6E519FC1D0E00931E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D680C6E319FC1D0E00931E20 /* Main.storyboard */; };
 		D680C6E719FC1D0E00931E20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D680C6E619FC1D0E00931E20 /* Images.xcassets */; };
-		D680C6EA19FC1D0E00931E20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D680C6E819FC1D0E00931E20 /* LaunchScreen.xib */; };
 		D680C6F619FC1D0E00931E20 /* MetroBarrierFreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C6F519FC1D0E00931E20 /* MetroBarrierFreeTests.m */; };
+		D680C70419FC250800931E20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D680C70219FC250800931E20 /* LaunchScreen.xib */; };
+		D680C70519FC250800931E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D680C70319FC250800931E20 /* Main.storyboard */; };
+		D680C70D19FC252300931E20 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C70819FC252300931E20 /* BaseViewController.m */; };
+		D680C70E19FC252300931E20 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C70A19FC252300931E20 /* MenuViewController.m */; };
+		D680C70F19FC252300931E20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C70C19FC252300931E20 /* ViewController.m */; };
+		D680C71D19FC255400931E20 /* AccessCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C71219FC255400931E20 /* AccessCoreData.m */; };
+		D680C71E19FC255400931E20 /* AccessMetroData+GetLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C71419FC255400931E20 /* AccessMetroData+GetLine.m */; };
+		D680C71F19FC255400931E20 /* AccessMetroData.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C71619FC255400931E20 /* AccessMetroData.m */; };
+		D680C72019FC255400931E20 /* ConnectCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C71819FC255400931E20 /* ConnectCoreData.m */; };
+		D680C72119FC255400931E20 /* CoreDataInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D680C71919FC255400931E20 /* CoreDataInfo.plist */; };
+		D680C74819FC259500931E20 /* Available.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C72519FC259500931E20 /* Available.m */; };
+		D680C74919FC259500931E20 /* BarrierFree.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C72719FC259500931E20 /* BarrierFree.m */; };
+		D680C74A19FC259500931E20 /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C72919FC259500931E20 /* Direction.m */; };
+		D680C74B19FC259500931E20 /* Facility.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C72B19FC259500931E20 /* Facility.m */; };
+		D680C74C19FC259500931E20 /* Gate.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C72D19FC259500931E20 /* Gate.m */; };
+		D680C74D19FC259500931E20 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C72F19FC259500931E20 /* Line.m */; };
+		D680C74E19FC259500931E20 /* MetroData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D680C73019FC259500931E20 /* MetroData.xcdatamodeld */; };
+		D680C74F19FC259500931E20 /* Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73319FC259500931E20 /* Operator.m */; };
+		D680C75019FC259500931E20 /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73519FC259500931E20 /* Platform.m */; };
+		D680C75119FC259500931E20 /* ServiceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73719FC259500931E20 /* ServiceDetail.m */; };
+		D680C75219FC259500931E20 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73919FC259500931E20 /* Station.m */; };
+		D680C75319FC259500931E20 /* StationOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73B19FC259500931E20 /* StationOrder.m */; };
+		D680C75419FC259500931E20 /* Surrounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73D19FC259500931E20 /* Surrounding.m */; };
+		D680C75519FC259500931E20 /* ToiletAssistance.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C73F19FC259500931E20 /* ToiletAssistance.m */; };
+		D680C75619FC259500931E20 /* TrainType.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C74119FC259500931E20 /* TrainType.m */; };
+		D680C75719FC259500931E20 /* Transfer.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C74319FC259500931E20 /* Transfer.m */; };
+		D680C75819FC259500931E20 /* TravelTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C74519FC259500931E20 /* TravelTime.m */; };
+		D680C75919FC259500931E20 /* WomenCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C74719FC259500931E20 /* WomenCar.m */; };
+		D680C76019FC25BE00931E20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C75C19FC25BE00931E20 /* AppDelegate.m */; };
+		D680C76219FC25BE00931E20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C75E19FC25BE00931E20 /* main.m */; };
+		D680C76319FC25BE00931E20 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D680C75F19FC25BE00931E20 /* settings.plist */; };
+		D680C76819FC25E600931E20 /* MetroData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D680C76519FC25E500931E20 /* MetroData.sqlite */; };
+		D680C76919FC25E600931E20 /* MetroData.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = D680C76619FC25E500931E20 /* MetroData.sqlite-shm */; };
+		D680C76A19FC25E600931E20 /* MetroData.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = D680C76719FC25E500931E20 /* MetroData.sqlite-wal */; };
+		D680C76D19FC269800931E20 /* AccessMetroDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C76B19FC269800931E20 /* AccessMetroDataTests.m */; };
+		D680C76E19FC269800931E20 /* CheckMetroData.m in Sources */ = {isa = PBXBuildFile; fileRef = D680C76C19FC269800931E20 /* CheckMetroData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +59,72 @@
 
 /* Begin PBXFileReference section */
 		D680C6D319FC1D0D00931E20 /* MetroBarrierFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroBarrierFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D680C6D719FC1D0D00931E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D680C6D819FC1D0D00931E20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D680C6DA19FC1D0D00931E20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D680C6DB19FC1D0D00931E20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D680C6DE19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroBarrierFree.xcdatamodel; sourceTree = "<group>"; };
-		D680C6E019FC1D0E00931E20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D680C6E119FC1D0E00931E20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D680C6E419FC1D0E00931E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D680C6E619FC1D0E00931E20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D680C6E919FC1D0E00931E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D680C6EF19FC1D0E00931E20 /* MetroBarrierFreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroBarrierFreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D680C6F419FC1D0E00931E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D680C6F519FC1D0E00931E20 /* MetroBarrierFreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetroBarrierFreeTests.m; sourceTree = "<group>"; };
+		D680C70219FC250800931E20 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D680C70319FC250800931E20 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D680C70719FC252300931E20 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D680C70819FC252300931E20 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D680C70919FC252300931E20 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		D680C70A19FC252300931E20 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		D680C70B19FC252300931E20 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D680C70C19FC252300931E20 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D680C71119FC255400931E20 /* AccessCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessCoreData.h; sourceTree = "<group>"; };
+		D680C71219FC255400931E20 /* AccessCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessCoreData.m; sourceTree = "<group>"; };
+		D680C71419FC255400931E20 /* AccessMetroData+GetLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AccessMetroData+GetLine.m"; sourceTree = "<group>"; };
+		D680C71519FC255400931E20 /* AccessMetroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessMetroData.h; sourceTree = "<group>"; };
+		D680C71619FC255400931E20 /* AccessMetroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessMetroData.m; sourceTree = "<group>"; };
+		D680C71719FC255400931E20 /* ConnectCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectCoreData.h; sourceTree = "<group>"; };
+		D680C71819FC255400931E20 /* ConnectCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectCoreData.m; sourceTree = "<group>"; };
+		D680C71919FC255400931E20 /* CoreDataInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CoreDataInfo.plist; sourceTree = "<group>"; };
+		D680C71C19FC255400931E20 /* MetroCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroCoreData.h; sourceTree = "<group>"; };
+		D680C72419FC259500931E20 /* Available.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Available.h; sourceTree = "<group>"; };
+		D680C72519FC259500931E20 /* Available.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Available.m; sourceTree = "<group>"; };
+		D680C72619FC259500931E20 /* BarrierFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrierFree.h; sourceTree = "<group>"; };
+		D680C72719FC259500931E20 /* BarrierFree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrierFree.m; sourceTree = "<group>"; };
+		D680C72819FC259500931E20 /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
+		D680C72919FC259500931E20 /* Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Direction.m; sourceTree = "<group>"; };
+		D680C72A19FC259500931E20 /* Facility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facility.h; sourceTree = "<group>"; };
+		D680C72B19FC259500931E20 /* Facility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facility.m; sourceTree = "<group>"; };
+		D680C72C19FC259500931E20 /* Gate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gate.h; sourceTree = "<group>"; };
+		D680C72D19FC259500931E20 /* Gate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gate.m; sourceTree = "<group>"; };
+		D680C72E19FC259500931E20 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		D680C72F19FC259500931E20 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		D680C73119FC259500931E20 /* MetroData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroData.xcdatamodel; sourceTree = "<group>"; };
+		D680C73219FC259500931E20 /* Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
+		D680C73319FC259500931E20 /* Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operator.m; sourceTree = "<group>"; };
+		D680C73419FC259500931E20 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		D680C73519FC259500931E20 /* Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Platform.m; sourceTree = "<group>"; };
+		D680C73619FC259500931E20 /* ServiceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDetail.h; sourceTree = "<group>"; };
+		D680C73719FC259500931E20 /* ServiceDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceDetail.m; sourceTree = "<group>"; };
+		D680C73819FC259500931E20 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		D680C73919FC259500931E20 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		D680C73A19FC259500931E20 /* StationOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationOrder.h; sourceTree = "<group>"; };
+		D680C73B19FC259500931E20 /* StationOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationOrder.m; sourceTree = "<group>"; };
+		D680C73C19FC259500931E20 /* Surrounding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surrounding.h; sourceTree = "<group>"; };
+		D680C73D19FC259500931E20 /* Surrounding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Surrounding.m; sourceTree = "<group>"; };
+		D680C73E19FC259500931E20 /* ToiletAssistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToiletAssistance.h; sourceTree = "<group>"; };
+		D680C73F19FC259500931E20 /* ToiletAssistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToiletAssistance.m; sourceTree = "<group>"; };
+		D680C74019FC259500931E20 /* TrainType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainType.h; sourceTree = "<group>"; };
+		D680C74119FC259500931E20 /* TrainType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainType.m; sourceTree = "<group>"; };
+		D680C74219FC259500931E20 /* Transfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transfer.h; sourceTree = "<group>"; };
+		D680C74319FC259500931E20 /* Transfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transfer.m; sourceTree = "<group>"; };
+		D680C74419FC259500931E20 /* TravelTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelTime.h; sourceTree = "<group>"; };
+		D680C74519FC259500931E20 /* TravelTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelTime.m; sourceTree = "<group>"; };
+		D680C74619FC259500931E20 /* WomenCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WomenCar.h; sourceTree = "<group>"; };
+		D680C74719FC259500931E20 /* WomenCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WomenCar.m; sourceTree = "<group>"; };
+		D680C75B19FC25BE00931E20 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D680C75C19FC25BE00931E20 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D680C75D19FC25BE00931E20 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D680C75E19FC25BE00931E20 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D680C75F19FC25BE00931E20 /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		D680C76519FC25E500931E20 /* MetroData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetroData.sqlite; sourceTree = "<group>"; };
+		D680C76619FC25E500931E20 /* MetroData.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MetroData.sqlite-shm"; sourceTree = "<group>"; };
+		D680C76719FC25E500931E20 /* MetroData.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MetroData.sqlite-wal"; sourceTree = "<group>"; };
+		D680C76B19FC269800931E20 /* AccessMetroDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessMetroDataTests.m; sourceTree = "<group>"; };
+		D680C76C19FC269800931E20 /* CheckMetroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMetroData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,31 +166,22 @@
 		D680C6D519FC1D0D00931E20 /* MetroBarrierFree */ = {
 			isa = PBXGroup;
 			children = (
-				D680C6DA19FC1D0D00931E20 /* AppDelegate.h */,
-				D680C6DB19FC1D0D00931E20 /* AppDelegate.m */,
-				D680C6E019FC1D0E00931E20 /* ViewController.h */,
-				D680C6E119FC1D0E00931E20 /* ViewController.m */,
-				D680C6E319FC1D0E00931E20 /* Main.storyboard */,
+				D680C70119FC250800931E20 /* Storyboards */,
+				D680C70619FC252300931E20 /* ViewControllers */,
+				D680C71019FC255400931E20 /* CoreDataSources */,
+				D680C72319FC259500931E20 /* CoreDataModels */,
+				D680C75A19FC25BE00931E20 /* SupportingFiles */,
+				D680C76419FC25E500931E20 /* Datas */,
 				D680C6E619FC1D0E00931E20 /* Images.xcassets */,
-				D680C6E819FC1D0E00931E20 /* LaunchScreen.xib */,
-				D680C6DD19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodeld */,
-				D680C6D619FC1D0D00931E20 /* Supporting Files */,
 			);
 			path = MetroBarrierFree;
-			sourceTree = "<group>";
-		};
-		D680C6D619FC1D0D00931E20 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D680C6D719FC1D0D00931E20 /* Info.plist */,
-				D680C6D819FC1D0D00931E20 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D680C6F219FC1D0E00931E20 /* MetroBarrierFreeTests */ = {
 			isa = PBXGroup;
 			children = (
+				D680C76B19FC269800931E20 /* AccessMetroDataTests.m */,
+				D680C76C19FC269800931E20 /* CheckMetroData.m */,
 				D680C6F519FC1D0E00931E20 /* MetroBarrierFreeTests.m */,
 				D680C6F319FC1D0E00931E20 /* Supporting Files */,
 			);
@@ -120,6 +194,118 @@
 				D680C6F419FC1D0E00931E20 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D680C70119FC250800931E20 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D680C70219FC250800931E20 /* LaunchScreen.xib */,
+				D680C70319FC250800931E20 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D680C70619FC252300931E20 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D680C70719FC252300931E20 /* BaseViewController.h */,
+				D680C70819FC252300931E20 /* BaseViewController.m */,
+				D680C70919FC252300931E20 /* MenuViewController.h */,
+				D680C70A19FC252300931E20 /* MenuViewController.m */,
+				D680C70B19FC252300931E20 /* ViewController.h */,
+				D680C70C19FC252300931E20 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			path = MetroBarrierFree/ViewControllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		D680C71019FC255400931E20 /* CoreDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D680C71319FC255400931E20 /* AccessMetroData */,
+				D680C71119FC255400931E20 /* AccessCoreData.h */,
+				D680C71219FC255400931E20 /* AccessCoreData.m */,
+				D680C71719FC255400931E20 /* ConnectCoreData.h */,
+				D680C71819FC255400931E20 /* ConnectCoreData.m */,
+				D680C71919FC255400931E20 /* CoreDataInfo.plist */,
+				D680C71C19FC255400931E20 /* MetroCoreData.h */,
+			);
+			path = CoreDataSources;
+			sourceTree = "<group>";
+		};
+		D680C71319FC255400931E20 /* AccessMetroData */ = {
+			isa = PBXGroup;
+			children = (
+				D680C71419FC255400931E20 /* AccessMetroData+GetLine.m */,
+				D680C71519FC255400931E20 /* AccessMetroData.h */,
+				D680C71619FC255400931E20 /* AccessMetroData.m */,
+			);
+			path = AccessMetroData;
+			sourceTree = "<group>";
+		};
+		D680C72319FC259500931E20 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				D680C72419FC259500931E20 /* Available.h */,
+				D680C72519FC259500931E20 /* Available.m */,
+				D680C72619FC259500931E20 /* BarrierFree.h */,
+				D680C72719FC259500931E20 /* BarrierFree.m */,
+				D680C72819FC259500931E20 /* Direction.h */,
+				D680C72919FC259500931E20 /* Direction.m */,
+				D680C72A19FC259500931E20 /* Facility.h */,
+				D680C72B19FC259500931E20 /* Facility.m */,
+				D680C72C19FC259500931E20 /* Gate.h */,
+				D680C72D19FC259500931E20 /* Gate.m */,
+				D680C72E19FC259500931E20 /* Line.h */,
+				D680C72F19FC259500931E20 /* Line.m */,
+				D680C73019FC259500931E20 /* MetroData.xcdatamodeld */,
+				D680C73219FC259500931E20 /* Operator.h */,
+				D680C73319FC259500931E20 /* Operator.m */,
+				D680C73419FC259500931E20 /* Platform.h */,
+				D680C73519FC259500931E20 /* Platform.m */,
+				D680C73619FC259500931E20 /* ServiceDetail.h */,
+				D680C73719FC259500931E20 /* ServiceDetail.m */,
+				D680C73819FC259500931E20 /* Station.h */,
+				D680C73919FC259500931E20 /* Station.m */,
+				D680C73A19FC259500931E20 /* StationOrder.h */,
+				D680C73B19FC259500931E20 /* StationOrder.m */,
+				D680C73C19FC259500931E20 /* Surrounding.h */,
+				D680C73D19FC259500931E20 /* Surrounding.m */,
+				D680C73E19FC259500931E20 /* ToiletAssistance.h */,
+				D680C73F19FC259500931E20 /* ToiletAssistance.m */,
+				D680C74019FC259500931E20 /* TrainType.h */,
+				D680C74119FC259500931E20 /* TrainType.m */,
+				D680C74219FC259500931E20 /* Transfer.h */,
+				D680C74319FC259500931E20 /* Transfer.m */,
+				D680C74419FC259500931E20 /* TravelTime.h */,
+				D680C74519FC259500931E20 /* TravelTime.m */,
+				D680C74619FC259500931E20 /* WomenCar.h */,
+				D680C74719FC259500931E20 /* WomenCar.m */,
+			);
+			name = CoreDataModels;
+			path = MetroBarrierFree/CoreDataModels;
+			sourceTree = SOURCE_ROOT;
+		};
+		D680C75A19FC25BE00931E20 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D680C75B19FC25BE00931E20 /* AppDelegate.h */,
+				D680C75C19FC25BE00931E20 /* AppDelegate.m */,
+				D680C75D19FC25BE00931E20 /* Info.plist */,
+				D680C75E19FC25BE00931E20 /* main.m */,
+				D680C75F19FC25BE00931E20 /* settings.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D680C76419FC25E500931E20 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				D680C76519FC25E500931E20 /* MetroData.sqlite */,
+				D680C76619FC25E500931E20 /* MetroData.sqlite-shm */,
+				D680C76719FC25E500931E20 /* MetroData.sqlite-wal */,
+			);
+			path = Datas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +369,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = D680C6CA19FC1D0D00931E20;
@@ -202,9 +387,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D680C6E519FC1D0E00931E20 /* Main.storyboard in Resources */,
-				D680C6EA19FC1D0E00931E20 /* LaunchScreen.xib in Resources */,
+				D680C70519FC250800931E20 /* Main.storyboard in Resources */,
+				D680C76319FC25BE00931E20 /* settings.plist in Resources */,
+				D680C76919FC25E600931E20 /* MetroData.sqlite-shm in Resources */,
+				D680C76819FC25E600931E20 /* MetroData.sqlite in Resources */,
+				D680C76A19FC25E600931E20 /* MetroData.sqlite-wal in Resources */,
+				D680C70419FC250800931E20 /* LaunchScreen.xib in Resources */,
 				D680C6E719FC1D0E00931E20 /* Images.xcassets in Resources */,
+				D680C72119FC255400931E20 /* CoreDataInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +412,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D680C6DC19FC1D0D00931E20 /* AppDelegate.m in Sources */,
-				D680C6D919FC1D0D00931E20 /* main.m in Sources */,
-				D680C6E219FC1D0E00931E20 /* ViewController.m in Sources */,
-				D680C6DF19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodeld in Sources */,
+				D680C75519FC259500931E20 /* ToiletAssistance.m in Sources */,
+				D680C75119FC259500931E20 /* ServiceDetail.m in Sources */,
+				D680C76019FC25BE00931E20 /* AppDelegate.m in Sources */,
+				D680C74C19FC259500931E20 /* Gate.m in Sources */,
+				D680C74F19FC259500931E20 /* Operator.m in Sources */,
+				D680C71D19FC255400931E20 /* AccessCoreData.m in Sources */,
+				D680C74919FC259500931E20 /* BarrierFree.m in Sources */,
+				D680C74B19FC259500931E20 /* Facility.m in Sources */,
+				D680C75019FC259500931E20 /* Platform.m in Sources */,
+				D680C75819FC259500931E20 /* TravelTime.m in Sources */,
+				D680C70F19FC252300931E20 /* ViewController.m in Sources */,
+				D680C74819FC259500931E20 /* Available.m in Sources */,
+				D680C70D19FC252300931E20 /* BaseViewController.m in Sources */,
+				D680C72019FC255400931E20 /* ConnectCoreData.m in Sources */,
+				D680C75419FC259500931E20 /* Surrounding.m in Sources */,
+				D680C75619FC259500931E20 /* TrainType.m in Sources */,
+				D680C75319FC259500931E20 /* StationOrder.m in Sources */,
+				D680C71F19FC255400931E20 /* AccessMetroData.m in Sources */,
+				D680C75919FC259500931E20 /* WomenCar.m in Sources */,
+				D680C74E19FC259500931E20 /* MetroData.xcdatamodeld in Sources */,
+				D680C74D19FC259500931E20 /* Line.m in Sources */,
+				D680C75719FC259500931E20 /* Transfer.m in Sources */,
+				D680C75219FC259500931E20 /* Station.m in Sources */,
+				D680C74A19FC259500931E20 /* Direction.m in Sources */,
+				D680C71E19FC255400931E20 /* AccessMetroData+GetLine.m in Sources */,
+				D680C76219FC25BE00931E20 /* main.m in Sources */,
+				D680C70E19FC252300931E20 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +446,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D680C76E19FC269800931E20 /* CheckMetroData.m in Sources */,
 				D680C6F619FC1D0E00931E20 /* MetroBarrierFreeTests.m in Sources */,
+				D680C76D19FC269800931E20 /* AccessMetroDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,25 +461,6 @@
 			targetProxy = D680C6F019FC1D0E00931E20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D680C6E319FC1D0E00931E20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D680C6E419FC1D0E00931E20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D680C6E819FC1D0E00931E20 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D680C6E919FC1D0E00931E20 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D680C6F719FC1D0E00931E20 /* Debug */ = {
@@ -301,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -347,7 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MetroBarrierFree/Info.plist;
+				INFOPLIST_FILE = MetroBarrierFree/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MetroBarrierFree/Info.plist;
+				INFOPLIST_FILE = MetroBarrierFree/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,13 +624,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D680C6DD19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodeld */ = {
+		D680C73019FC259500931E20 /* MetroData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D680C6DE19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodel */,
+				D680C73119FC259500931E20 /* MetroData.xcdatamodel */,
 			);
-			currentVersion = D680C6DE19FC1D0E00931E20 /* MetroBarrierFree.xcdatamodel */;
-			path = MetroBarrierFree.xcdatamodeld;
+			currentVersion = D680C73119FC259500931E20 /* MetroData.xcdatamodel */;
+			path = MetroData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

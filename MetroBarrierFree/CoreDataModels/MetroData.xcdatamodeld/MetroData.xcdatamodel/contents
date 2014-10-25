@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Available" representedClassName="Available" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BarrierFree" representedClassName="BarrierFree" syncable="YES">
+        <attribute name="available" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="locatedArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sameAs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ucode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="facility" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Facility" inverseName="barrierFrees" inverseEntity="Facility" syncable="YES"/>
+        <relationship name="platforms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Platform" inverseName="barrierFrees" inverseEntity="Platform" syncable="YES"/>
+        <relationship name="serviceDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ServiceDetail" inverseName="barrierFree" inverseEntity="ServiceDetail" syncable="YES"/>
+        <relationship name="toiletAssistances" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ToiletAssistance" inverseName="barrierFrees" inverseEntity="ToiletAssistance" syncable="YES"/>
+    </entity>
+    <entity name="Direction" representedClassName="Direction" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Facility" representedClassName="Facility" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sameAs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ucode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="barrierFrees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BarrierFree" inverseName="facility" inverseEntity="BarrierFree" syncable="YES"/>
+        <relationship name="platforms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Platform" inverseName="facility" inverseEntity="Platform" syncable="YES"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="facilitys" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="Gate" representedClassName="Gate" syncable="YES">
+        <attribute name="floor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ucode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="gates" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="Line" representedClassName="Line" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sameAs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ucode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stationOrders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StationOrder" inverseName="line" inverseEntity="StationOrder" syncable="YES"/>
+        <relationship name="stations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Station" inverseName="line" inverseEntity="Station" syncable="YES"/>
+        <relationship name="transfers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transfer" inverseName="line" inverseEntity="Transfer" syncable="YES"/>
+        <relationship name="travelTimes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TravelTime" inverseName="line" inverseEntity="TravelTime" syncable="YES"/>
+        <relationship name="womenCars" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WomenCar" inverseName="line" inverseEntity="WomenCar" syncable="YES"/>
+    </entity>
+    <entity name="Operator" representedClassName="Operator" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Platform" representedClassName="Platform" syncable="YES">
+        <attribute name="carComposition" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="carNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="railDirection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="barrierFrees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BarrierFree" inverseName="platforms" inverseEntity="BarrierFree" syncable="YES"/>
+        <relationship name="facility" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Facility" inverseName="platforms" inverseEntity="Facility" syncable="YES"/>
+        <relationship name="surrounds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Surrounding" inverseName="platform" inverseEntity="Surrounding" syncable="YES"/>
+        <relationship name="transfers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transfer" inverseName="platform" inverseEntity="Transfer" syncable="YES"/>
+    </entity>
+    <entity name="ServiceDetail" representedClassName="ServiceDetail" syncable="YES">
+        <attribute name="direction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operationDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="barrierFree" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BarrierFree" inverseName="serviceDetails" inverseEntity="BarrierFree" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sameAs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ucode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="facilitys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Facility" inverseName="station" inverseEntity="Facility" syncable="YES"/>
+        <relationship name="gates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gate" inverseName="station" inverseEntity="Gate" syncable="YES"/>
+        <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="stations" inverseEntity="Line" syncable="YES"/>
+    </entity>
+    <entity name="StationOrder" representedClassName="StationOrder" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="stationOrders" inverseEntity="Line" syncable="YES"/>
+    </entity>
+    <entity name="Surrounding" representedClassName="Surrounding" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="platform" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Platform" inverseName="surrounds" inverseEntity="Platform" syncable="YES"/>
+    </entity>
+    <entity name="ToiletAssistance" representedClassName="ToiletAssistance" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="barrierFrees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BarrierFree" inverseName="toiletAssistances" inverseEntity="BarrierFree" syncable="YES"/>
+    </entity>
+    <entity name="TrainType" representedClassName="TrainType" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Transfer" representedClassName="Transfer" syncable="YES">
+        <attribute name="necessaryTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="railDirection" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="railway" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="transfers" inverseEntity="Line" syncable="YES"/>
+        <relationship name="platform" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Platform" inverseName="transfers" inverseEntity="Platform" syncable="YES"/>
+    </entity>
+    <entity name="TravelTime" representedClassName="TravelTime" syncable="YES">
+        <attribute name="fromStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="necessaryTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="toStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="travelTimes" inverseEntity="Line" syncable="YES"/>
+    </entity>
+    <entity name="WomenCar" representedClassName="WomenCar" syncable="YES">
+        <attribute name="carComposition" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="carNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fromStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operationDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="untilTime" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="womenCars" inverseEntity="Line" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Available" positionX="-470" positionY="-964" width="128" height="73"/>
+        <element name="BarrierFree" positionX="-666" positionY="-927" width="128" height="223"/>
+        <element name="Direction" positionX="-657" positionY="-477" width="128" height="73"/>
+        <element name="Facility" positionX="-857" positionY="-747" width="128" height="133"/>
+        <element name="Gate" positionX="-1224" positionY="-900" width="128" height="133"/>
+        <element name="Line" positionX="-1226" positionY="-747" width="128" height="208"/>
+        <element name="Operator" positionX="-1413" positionY="-972" width="128" height="73"/>
+        <element name="Platform" positionX="-657" positionY="-639" width="128" height="148"/>
+        <element name="ServiceDetail" positionX="-470" positionY="-874" width="128" height="118"/>
+        <element name="Station" positionX="-1035" positionY="-855" width="128" height="208"/>
+        <element name="StationOrder" positionX="-1413" positionY="-889" width="128" height="88"/>
+        <element name="Surrounding" positionX="-468" positionY="-612" width="128" height="73"/>
+        <element name="ToiletAssistance" positionX="-470" positionY="-736" width="128" height="88"/>
+        <element name="TrainType" positionX="-1413" positionY="-783" width="128" height="73"/>
+        <element name="Transfer" positionX="-855" positionY="-522" width="128" height="118"/>
+        <element name="TravelTime" positionX="-1415" positionY="-702" width="128" height="118"/>
+        <element name="WomenCar" positionX="-1413" positionY="-567" width="128" height="163"/>
+    </elements>
+</model>
